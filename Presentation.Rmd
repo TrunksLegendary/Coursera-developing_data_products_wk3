@@ -1,0 +1,41 @@
+---
+title: "Developing Data Products Week 3"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Developing Data Products - Week 3 Assignment
+
+
+November 13, 2016
+
+
+
+```{r,include=FALSE}
+library(plotly)
+data(quakes)
+table <- aggregate(depth ~ mag, data = quakes, FUN = mean)
+plot <- plot_ly(table)  %>% add_trace(x = ~mag, y = ~depth,type = "scatter", mode = "markers")
+
+
+
+```
+## Earthquake Data 
+Simple Graph using Plotly to show the relation of the Magnitude of an earthquke to its depth.
+```{r}
+ggplotly(plot)
+```
+
+##  Code:
+
+- library(plotly)
+- data(quakes)
+- table <- aggregate(depth ~ mag, data = quakes, FUN = mean)
+- plot <- plot_ly(table)  %>% add_trace(x = ~mag, y = ~depth,type = "scatter", mode = "markers")
+
+
+
+

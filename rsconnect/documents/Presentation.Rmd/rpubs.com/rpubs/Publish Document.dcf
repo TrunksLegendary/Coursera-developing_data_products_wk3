@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/333502/0432f89e87b44e4fb4fc2577b8878372
+bundleId: https://api.rpubs.com/api/v1/document/333502/0432f89e87b44e4fb4fc2577b8878372
+url: http://rpubs.com/TrunksLegendary/333502
+when: 1511508638.77971
